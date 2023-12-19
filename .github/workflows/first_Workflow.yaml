@@ -1,6 +1,9 @@
 name: Hello
 
-on: push
+on:
+  push:
+    branches:
+      - dev
 jobs:
   Hello:
     runs-on: ubuntu-latest

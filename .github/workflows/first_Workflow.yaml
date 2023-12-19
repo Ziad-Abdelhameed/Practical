@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v1
       - name: print Hello
         run: echo "Hello Ziad from ${{runner.os}}"
-      run: echo "from ${{github.ref}}"
+        run: echo "from ${{github.ref}}"

@@ -1,0 +1,17 @@
+name: Second
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: print Hello
+        run: echo "Hello Ziad from ${{runner.os}}"
+
+      - name: print Branch Name
+        run: echo "from ${{github.ref}}"

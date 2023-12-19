@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v1
       - name: print Hello
         run: echo "Hello Ziad from ${{runner.os}}"
-      -name: print which branch now
-        run: echo "from ${{github.ref}}"  
+      - name: print which branch now
+        run: echo "from ${{github.ref}}"
